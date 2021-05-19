@@ -1,0 +1,10 @@
+import pandas as pd
+
+train1 = pd.read_csv('https://raw.githubusercontent.com/hrshah211/Datasets/main/Kaggle%20Digit%20Recognizer%20Dataset/train_1.csv')
+train2 = pd.read_csv('https://raw.githubusercontent.com/hrshah211/Datasets/main/Kaggle%20Digit%20Recognizer%20Dataset/train_2.csv')
+train3 = pd.read_csv('https://raw.githubusercontent.com/hrshah211/Datasets/main/Kaggle%20Digit%20Recognizer%20Dataset/train_3.csv')
+train = pd.concat([train1, train2, train3])
+
+test1 = pd.read_csv('https://raw.githubusercontent.com/hrshah211/Datasets/main/Kaggle%20Digit%20Recognizer%20Dataset/test_1.csv')
+test2 = pd.read_csv('https://raw.githubusercontent.com/hrshah211/Datasets/main/Kaggle%20Digit%20Recognizer%20Dataset/test_2.csv')
+test = pd.concat([test1, test2])
